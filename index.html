@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijeet Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="Abhijeet..png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#mySkills">My Skills</a></li>
+                    <li><a href="#myProjects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class='bx bx-x' onclick="closeMenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi I'm <span>Abhijeet</span> Singh Rathod <br> from Indore, India.</h1>
+            </div>
+        </div>
+    </div>
+<!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="abhijeetImg1.jpeg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="description-content">As a fresher front-end developer, I have hands-on experience with HTML, CSS, JavaScript, and Bootstrap, alongside knowledge of Java, Spring Boot, and MySQL. My projects demonstrate a strong eye for design and a passion for creating seamless user experiences. Eager to leverage my skills and creativity to build responsive and user-friendly web applications.</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="openTab('education')">Education</div>
+                        <div class="tab-links" onclick="openTab('experience')">Experience</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2016 - 2020</span> <br>Bachelor of Technology (Mechanical Engineering)</li>
+                            <li><span>2016</span> <br>High School Certificate</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intern</span> <br>The Sparks Foundation  -  1 month</li>
+                            <li><span>Web Developer Traniee</span> <br>AccioJob - 6 months <br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- My Skills Section -->
+    <div id="mySkills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML</h3>
+                </div>
+                <div>
+                    <i class='bx bxl-css3'></i>
+                    <h3>CSS</h3>
+                </div>
+                <div>
+                    <i class='bx bxl-bootstrap' ></i>
+                    <h3>Bootstrap</h3>
+                </div>
+                <div>
+                    <i class='bx bxl-javascript' ></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div>
+                    <i class='bx bxl-java' ></i>
+                    <h3>Java</h3>
+                </div>
+                <div>
+                    <i class='bx bxl-spring-boot' ></i>
+                    <h3>SpringBoot</h3>
+                </div>
+                <div>
+                    <i class='bx bxs-data'></i>
+                    <h3>MySql</h3>
+                </div>
+                <div>
+                    <i class='bx bxl-github' ></i>
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- My Projects -->
+    <div id="myProjects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="bank img1.png" alt="">
+                    <div class="layer">
+                        <h3>Basic Banking System</h3>
+                        <p>The project lets the usertransfer money to any of the saved beneficiary and keeps the transactions record in a separate table. The frontend part of the project is made using HTML,CSS and Bootstrap, the backend is made using JavaScript.</p>
+                        <a href="https://abhijeetr04.github.io/Basic-Banking-System/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="museum img.png" alt="">
+                    <div class="layer">
+                        <h3>Museum Website</h3>
+                        <p>This is the replica of a museum webpage made using html and css. The webpage
+                            contains a navigation bar, grid of images, action buttons. The Webpage is responsive to
+                            the screen size.</p>
+                        <a href="https://abhijeetr04.github.io/Museum-Webpage/"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="airline.png" alt="">
+                    <div class="layer">
+                        <h3>Airline Management System</h3>
+                        <p>Built a project using java to provide ease in customer and user management in Airline
+                            services by using Netbeans and MYSQL Workbench that further uses JavaSwing and
+                            SQL. Provides a tool to Add User, Add flights and Book Tickets for the customers and
+                            maintain a record in the database</p>
+                        <a href="https://github.com/AbhijeetR04/AirlineReservationSystem"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <!-- <div class="project">
+                    <img src="bank img1.png" alt="">
+                    <div class="layer">
+                        <h3>Basic Banking System</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur deleniti minima libero praesentium eius ipsam alias numquam, debitis animi repellendus.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a class="btn" href = "https://github.com/AbhijeetR04" target="_blank">See More</a>
+        </div>
+    </div>
+<!-- Contact Me -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col1">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bxs-envelope' ></i> rathodabhijeetsingh04@gmail.com</p>
+                    <p><i class='bx bxs-phone' ></i>+91-8966977007</p>
+                    <div class="social-icons">
+                        <a href="www.linkedin.com/in/abhijeet-singh-rathod-b86864172"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="https://github.com/AbhijeetR04"><i class='bx bxl-github'></i></a>
+                    </div>
+                    <a href="AbhijeetResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-col2">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" placeholder="Your Name" name="Name" required>
+                        <input type="email" placeholder="Your Email" name="Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- copyright section -->
+    <div class="copyright">
+        <p>Copyright <i class='bx bx-copyright'></i> Abhijeet, Made by Abhijeet Singh Rathod.</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
